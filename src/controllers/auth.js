@@ -48,4 +48,20 @@ export default {
                 },
             });
     },
+
+    whoAmI: async (request, response) => {
+        const { id } = request.user;
+        const user = await Users.findOne({
+            where: {
+                id,
+            }
+        });
+        console.log(user);
+        const { role } = await user.dataValues;
+        return response.status(200)
+            .json({
+                status: 'success',
+                data: role,
+            });
+    },
 }

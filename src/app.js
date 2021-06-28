@@ -7,6 +7,8 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import routes from './routes';
 import bodyParser from "body-parser";
+import swaggerJsDoc from 'swagger-jsdoc';
+import swaggerUi from 'swagger-ui-express';
 
 dotenv.config();
 
@@ -22,6 +24,23 @@ app.use(helmet());
 if (['development', 'staging', 'production'].includes(process.env.NODE_ENV)) {
     app.use(morgan('dev'));
 }
+
+const swaggerOptions = {
+    swaggerDefinition: {
+        info: {
+            title: 'Emit-it inventory system',
+            description: 'Inventory system',
+            contact: {
+                email: 'ademola.adigun@student.nhlstenden.com'
+            },
+            servers: ['http://localhost:8000/']
+        }
+    },
+    apis: ['src/routes/auth.js', 'src/routes/components.js', 'src/routes/orders.js', 'src/routes/projects.js', 'src/routes/user.js'],
+}
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use(routes);
 

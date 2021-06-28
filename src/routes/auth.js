@@ -5,7 +5,7 @@ import authenticate from "../middleware/authenticate";
 
 const router = Router();
 const {verifyToken} = authenticate;
-const {userLogin, whoAmI} = authController
+const {loginUser, whoAmI} = authController
 
 /**
  * @swagger
@@ -18,7 +18,7 @@ const {userLogin, whoAmI} = authController
  *          description: data object with user and token inside.
  */
 router.post('/login',
-    asyncWrapper(userLogin),
+    asyncWrapper(loginUser),
 );
 
 /**
