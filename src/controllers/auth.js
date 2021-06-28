@@ -5,9 +5,7 @@ import Models from '../models';
 config();
 
 const {
-
-    User,
-
+    Users,
 } = Models;
 
 
@@ -18,7 +16,7 @@ export default {
             password,
         } = request.body;
 
-        const userEmail = await User.getExistingUser(email);
+        const userEmail = await Users.getExistingUsers(email);
         if (!userEmail) {
             return response.status(401)
                 .json({

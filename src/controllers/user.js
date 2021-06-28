@@ -58,18 +58,19 @@ export default {
     },
 
     updateUser: async (request, response) => {
-        const {id} = request.params;
-        const users = await Users.findOne({
+        const {id} = request.user;
+        const user = await Users.findOne({
             where: {
                 id,
             }
         });
 
-        await users.update(request.body, {
+        await user.update(request.body, {
             fields: Object.keys(request.body),
         });
         return response.status(200).json({
             message: 'success',
+            data: user
         });
     },
 
