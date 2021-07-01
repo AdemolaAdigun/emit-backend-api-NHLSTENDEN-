@@ -33,7 +33,7 @@ const swaggerOptions = {
             contact: {
                 email: 'ademola.adigun@student.nhlstenden.com'
             },
-            servers: ['http://localhost:8000/']
+            servers: ['https://emit-dev.herokuapp.com/']
         }
     },
     apis: ['src/routes/auth.js', 'src/routes/components.js', 'src/routes/orders.js', 'src/routes/projects.js', 'src/routes/user.js'],
