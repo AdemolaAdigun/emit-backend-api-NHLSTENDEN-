@@ -9,7 +9,7 @@ export default {
                 id: uuidv4(),
                 userId,
                 name: 'Ultra-Drone-X',
-                description: 'While drones serve a variety of purposes, such as recreational, photography, commercial and military, their two basic functions are flight and navigation.',
+                description: 'While drones serve a variety of purposes, such as recreational, photography, commercial.',
                 createdAt: new Date(),
                 updatedAt: new Date(),
             },

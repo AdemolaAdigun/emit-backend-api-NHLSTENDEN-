@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default {
     up: async (queryInterface, Sequelize) => {
-        const projectId = await queryInterface.rawSelect('Projects', { where: { name: 'Project-X' } }, ['id']);
+        const projectId = await queryInterface.rawSelect('Projects', { where: { name: 'Ultra-Drone-X' } }, ['id']);
 
         return queryInterface.bulkInsert('Attachments', [
             {
