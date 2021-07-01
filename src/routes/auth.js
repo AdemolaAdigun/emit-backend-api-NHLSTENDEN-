@@ -29,7 +29,6 @@ router.post('/login',
  *      parameters:
  *      response:
  *          '200':
- *          description: data object with user and token inside.
  */
 router.get('/whoami',
     verifyToken,

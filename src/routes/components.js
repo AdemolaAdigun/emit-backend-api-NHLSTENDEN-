@@ -157,24 +157,60 @@ router.delete(
     asyncWrapper(deleteComponent)
 );
 
+/**
+ * @swagger
+ * /components/templates/all
+ *  get:
+ *      description: Used for getting templates
+ *      response:
+ *          '200':
+ *          description: answer.
+ */
 router.get(
     '/templates/all',
     verifyToken,
     asyncWrapper(getTemplates)
 );
 
+/**
+ * @swagger
+ * /components/templates/create
+ *  post:
+ *      description: Used for creating templates
+ *      response:
+ *          '200':
+ *          description: answer.
+ */
 router.post(
     '/templates/create',
     verifyToken,
     asyncWrapper(createTemplate)
 );
 
+/**
+ * @swagger
+ * /components/templates/delete/:id
+ *  delete:
+ *      description: Used for deleting templates
+ *      response:
+ *          '200':
+ *          description: answer.
+ */
 router.delete(
     '/templates/delete/:id',
     verifyToken,
     asyncWrapper(deleteTemplate)
 );
 
+/**
+ * @swagger
+ * /components/getFields/all
+ *  delete:
+ *      description: Used for deleting templates
+ *      response:
+ *          '200':
+ *          description: answer.
+ */
 router.get(
     '/getFields/all',
     verifyToken,
