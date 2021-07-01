@@ -16,12 +16,30 @@ const {
 
 const router = Router();
 
+/**
+ * @swagger
+ * /orders/:id
+ *  get:
+ *      description: Used for getting a order by id
+ *      response:
+ *          '200':
+ *          description: answer.
+ */
 router.get(
     '/:id',
     verifyToken,
     asyncWrapper(getOrderById)
 );
 
+/**
+ * @swagger
+ * /orders/:
+ *  get:
+ *      description: Used for getting all orders
+ *      response:
+ *          '200':
+ *          description: answer.
+ */
 router.get(
     '/',
     verifyToken,
@@ -43,7 +61,15 @@ router.put(
     asyncWrapper(updateOrder)
 );
 */
-
+/**
+ * @swagger
+ * /orders/:id
+ *  delete:
+ *      description: Used for deleting an order
+ *      response:
+ *          '200':
+ *          description: answer.
+ */
 router.delete(
     '/delete/:id',
     verifyToken,
