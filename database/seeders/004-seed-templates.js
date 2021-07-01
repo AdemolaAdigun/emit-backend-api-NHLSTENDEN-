@@ -5,7 +5,7 @@ export default {
         return queryInterface.bulkInsert('Templates', [
             {
                 id: uuidv4(),
-                name: 'resistor',
+                name: 'Resistor',
                 createdAt: new Date(),
                 updatedAt: new Date(),
             },
