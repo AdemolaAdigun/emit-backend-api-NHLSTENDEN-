@@ -8,9 +8,8 @@ export default {
             {
                 id: uuidv4(),
                 userId,
-                name: 'Project-X',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
-                    'Sed eleifend dignissim tempor. Vestibulum sed eros.',
+                name: 'Ultra-Drone-X',
+                description: 'While drones serve a variety of purposes, such as recreational, photography, commercial and military, their two basic functions are flight and navigation. To achieve flight, drones consist of a power source, such as battery or fuel, rotors, propellers and a frame.',
                 createdAt: new Date(),
                 updatedAt: new Date(),
             },
