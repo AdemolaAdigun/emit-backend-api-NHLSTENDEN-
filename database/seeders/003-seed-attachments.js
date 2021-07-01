@@ -8,7 +8,7 @@ export default {
             {
                 id: uuidv4(),
                 projectId,
-                attachment: '/attachments',
+                attachment: 'https://th.bing.com/th/id/R831650a64a0e9e2b0c7df32a6724bcc9?rik=wg0stekXuRvQ%2fA&pid=ImgRaw',
                 createdAt: new Date(),
                 updatedAt: new Date(),
             },
