@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default {
     up: async (queryInterface, Sequelize) => {
-        const templateId = await queryInterface.rawSelect('Templates', { where: { name: 'resistor' } }, ['id']);
+        const templateId = await queryInterface.rawSelect('Templates', { where: { name: 'Resistor' } }, ['id']);
 
         return queryInterface.bulkInsert('Fields', [
             {
