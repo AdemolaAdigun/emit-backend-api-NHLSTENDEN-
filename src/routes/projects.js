@@ -21,7 +21,7 @@ const router = Router();
 
 /**
  * @swagger
- * /projects/:id
+ * /projects/:id:
  *  get:
  *      description: Used for getting a project by id
  *      response:
@@ -36,7 +36,7 @@ router.get(
 
 /**
  * @swagger
- * /projects/
+ * /projects:
  *  get:
  *      description: Used for getting all the projects
  *      response:
@@ -51,7 +51,7 @@ router.get(
 
 /**
  * @swagger
- * /projects/create
+ * /projects/create:
  *  post:
  *      description: Used for creating a project
  *      response:
@@ -67,7 +67,7 @@ router.post(
 
 /**
  * @swagger
- * /projects/update/:id
+ * /projects/update/:id:
  *  put:
  *      description: Used for updating a project
  *      response:
@@ -82,7 +82,7 @@ router.put(
 
 /**
  * @swagger
- * /projects/delete/:id
+ * /projects/delete/:id:
  *  delete:
  *      description: Used for deleting a project
  *      response:
@@ -97,7 +97,7 @@ router.delete(
 
 /**
  * @swagger
- * /projects/:projectId/add-attachment
+ * /projects/:projectId/add-attachment:
  *  post:
  *      description: Used for adding an attachment
  *      response:
@@ -113,7 +113,7 @@ router.post(
 
 /**
  * @swagger
- * /projects/remove-attachment/:attachmentId
+ * /projects/remove-attachment/:attachmentId:
  *  delete:
  *      description: Used for removing an attachment
  *      response:

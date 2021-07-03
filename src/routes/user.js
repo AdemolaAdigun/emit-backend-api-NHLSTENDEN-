@@ -32,7 +32,7 @@ router.get(
 
 /**
  * @swagger
- * /users/:
+ * /users:
  *  get:
  *      description: Used for getting all the users
  *      response:
@@ -47,7 +47,7 @@ router.get(
 
 /**
  * @swagger
- * /users/create
+ * /users/create:
  *  post:
  *      description: Used for creating a new user
  *      response:
@@ -62,7 +62,7 @@ router.post(
 
 /**
  * @swagger
- * /users/update
+ * /users/update:
  *  put:
  *      description: Used for updating an user
  *      response:
@@ -77,7 +77,7 @@ router.put(
 
 /**
  * @swagger
- * /users/delete/:id
+ * /users/delete/:id:
  *  delete:
  *      description: Used for deleting an user
  *      response:

@@ -18,7 +18,7 @@ const router = Router();
 
 /**
  * @swagger
- * /orders/:id
+ * /orders/:id:
  *  get:
  *      description: Used for getting a order by id
  *      response:
@@ -33,7 +33,7 @@ router.get(
 
 /**
  * @swagger
- * /orders/:
+ * /orders:
  *  get:
  *      description: Used for getting all orders
  *      response:
@@ -63,7 +63,7 @@ router.put(
 */
 /**
  * @swagger
- * /orders/:id
+ * /orders/:id:
  *  delete:
  *      description: Used for deleting an order
  *      response:

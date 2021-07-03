@@ -100,7 +100,7 @@ router.delete(
 
 /**
  * @swagger
- * /components/:componentId/fields/:fieldId/answer
+ * /components/:componentId/fields/:fieldId/answer:
  *  post:
  *      description: Used for adding answer to fields in components
  *      response:
@@ -114,8 +114,8 @@ router.post(
 );
 /**
  * @swagger
- * /components/:componentId/fields/:fieldId/answer-update/:fieldAnswerId
- *  post:
+ * /components/:componentId/fields/:fieldId/answer-update/:fieldAnswerId:
+ *  put:
  *      description: Used for updating answer to fields in components
  *      response:
  *          '200':
@@ -129,8 +129,8 @@ router.put(
 
 /**
  * @swagger
- * /components/update/:id
- *  post:
+ * /components/update/:id:
+ *  put:
  *      description: Used for updating components
  *      response:
  *          '200':
@@ -144,8 +144,8 @@ router.put(
 
 /**
  * @swagger
- * /components/delete/:id
- *  post:
+ * /components/delete/:id:
+ *  delete:
  *      description: Used for deleting components
  *      response:
  *          '200':
@@ -159,7 +159,7 @@ router.delete(
 
 /**
  * @swagger
- * /components/templates/all
+ * /components/templates/all:
  *  get:
  *      description: Used for getting templates
  *      response:
@@ -174,7 +174,7 @@ router.get(
 
 /**
  * @swagger
- * /components/templates/create
+ * /components/templates/create:
  *  post:
  *      description: Used for creating templates
  *      response:
@@ -189,7 +189,7 @@ router.post(
 
 /**
  * @swagger
- * /components/templates/delete/:id
+ * /components/templates/delete/:id:
  *  delete:
  *      description: Used for deleting templates
  *      response:
@@ -204,8 +204,8 @@ router.delete(
 
 /**
  * @swagger
- * /components/getFields/all
- *  delete:
+ * /components/getFields/all:
+ *  get:
  *      description: Used for deleting templates
  *      response:
  *          '200':
